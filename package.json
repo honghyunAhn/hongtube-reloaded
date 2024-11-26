@@ -7,7 +7,7 @@
     "url": "(https://github.com/honghyunAhn/hongtube-reloaded.git)"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node src/server.js",
+    "dev": "nodemon --exec babel-node src/init.js",
     "db": "sudo systemctl start mongod",
     "dbs": "sudo systemctl stop mongod"
   },
