@@ -12,9 +12,9 @@ html(lang="ko")
                         a(href="/") Home 
                     if loggedIn
                         li 
-                            a(href="/logout") Log out
+                            a(href="/users/logout") Log out
                         li 
-                            a(href="/my-frofile") #{loggedInUser.name}의 Profile
+                            a(href="/my-frofile") #{loggedIn.name}의 Profile
                     else
                         li
                             a(href="/join") Join
