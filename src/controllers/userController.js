@@ -42,7 +42,7 @@ export const getLogin = (req, res) =>
   res.render("users/login", { pageTitle: "Login" });
 
 export const postLogin = async (req, res) => {
-  const { username, password, email } = req.body;
+  const { username, password } = req.body;
   const pageTitle = "Login";
   const user = await User.findOne({ username, socialOnly: false });
   if (!user) {
@@ -117,7 +117,7 @@ export const finishGithubLogin = async (req, res) => {
     }
     let user = await User.findOne({ email: emailObj.email });
     if (!user) {
-      const user = await User.create({
+      user = await User.create({
         avatarUrl: userData.avatar_url,
         name: userData.name,
         username: userData.login,
