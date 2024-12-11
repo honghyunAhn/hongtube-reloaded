@@ -150,7 +150,9 @@ export const postEdit = async (req, res) => {
       user: { _id, username: sessionUsername, email: sessionEmail },
     },
     body: { name, email, username, location },
+    file,
   } = req;
+  console.log(file);
   let searchParam = [];
   if (sessionEmail !== email) {
     searchParam.push({ email });
