@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "nodemon --exec babel-node src/init.js",
     "db": "sudo systemctl start mongod",
-    "dbs": "sudo systemctl stop mongod"
+    "dbs": "sudo systemctl stop mongod",
+    "assets": "webpack --config webpack.config.js"
   },
   "author": "Ahn honghyun<anh2073@gmail.com>",
   "license": "MIT",
@@ -31,6 +32,8 @@
     "@babel/preset-env": "^7.26.0",
     "@prettier/plugin-pug": "^3.2.0",
     "nodemon": "^3.1.7",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
   }
 }
