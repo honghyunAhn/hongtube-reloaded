@@ -1,7 +1,7 @@
-extends ../base
+extends ../base.pug
 include ../mixins/video
 
-lock content
+block content
     form(method="GET").search__form
         input(placeholder="Search by title",name="keyword", type="text")
         button
