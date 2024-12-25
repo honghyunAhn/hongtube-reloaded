@@ -64,11 +64,11 @@ main {
     color: white;
   }
   &.info {
-    background-color: rgb(73, 91, 255);
+    background-color: $blue;
     color: white;
   }
   &.success {
-    background-color: rgba(61, 253, 86, 0.507);
+    background-color: $green;
     color: white;
   }
 }
