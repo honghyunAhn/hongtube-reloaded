@@ -31,14 +31,17 @@ const changeVideoTime = (seconds) => {
 };
 
 const handleKeyboard = (event) => {
-  if (event.target === document.body && event.code === "Space") {
-    handlePlayClick();
-  }
-  if (event.target === document.body && event.code === "ArrowRight") {
-    changeVideoTime(5);
-  }
-  if (event.target === document.body && event.code === "ArrowLeft") {
-    changeVideoTime(-5);
+  if (event.target === document.body) {
+    if (event.code === "Space") {
+      handlePlayClick();
+      event.preventDefault();
+    }
+    if (event.code === "ArrowRight") {
+      changeVideoTime(5);
+    }
+    if (event.code === "ArrowLeft") {
+      changeVideoTime(-5);
+    }
   }
 };
 
@@ -131,7 +134,7 @@ const handleEnded = () => {
 };
 
 playBtn.addEventListener("click", handlePlayClick);
-document.addEventListener("keyup", handleKeyboard);
+document.addEventListener("keydown", handleKeyboard);
 muteBtn.addEventListener("click", handleMuteClick);
 volumeRange.addEventListener("input", handleVolumeChange);
 video.addEventListener("click", handlePlayClick);
