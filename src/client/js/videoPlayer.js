@@ -31,13 +31,13 @@ const changeVideoTime = (seconds) => {
 };
 
 const handleKeyboard = (event) => {
-  if (event.code === "Space") {
+  if (event.target === document.body && event.code === "Space") {
     handlePlayClick();
   }
-  if (event.code === "ArrowRight") {
+  if (event.target === document.body && event.code === "ArrowRight") {
     changeVideoTime(5);
   }
-  if (event.code === "ArrowLeft") {
+  if (event.target === document.body && event.code === "ArrowLeft") {
     changeVideoTime(-5);
   }
 };
