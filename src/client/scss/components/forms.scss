@@ -9,8 +9,7 @@ form {
   }
 }
 
-input:not(input[type="range"]),
-input[type="submit"] {
+input:not(input[type="range"]) {
   all: unset;
   padding: 15px 20px;
   border-radius: 5px;
@@ -32,7 +31,7 @@ input[type="submit"],
   background-color: white !important;
   color: rgba($color: $red, $alpha: 1) !important;
   text-align: center !important;
-  cursor: pointer;
+  cursor: pointer !important;
   display: block;
   border: none;
   &:focus {
@@ -46,4 +45,8 @@ input[type="submit"],
 
 input[type="file"] {
   font-size: 100px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
 }

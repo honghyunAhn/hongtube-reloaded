@@ -12,6 +12,9 @@ const addComment = (text, id) => {
   span.innerText = ` ${text}`;
   const span2 = document.createElement("span");
   span2.innerText = "❌";
+  span2.style.float = "right";
+  span2.style.fontSize = "12px";
+  span2.style.cursor = "pointer";
   newComment.appendChild(icon);
   newComment.appendChild(span);
   newComment.appendChild(span2);
@@ -29,12 +32,12 @@ const handleSubmit = async (event) => {
   const response = await fetch(`/api/videos/${videoId}/comment`, {
     method: "POST",
     headers: {
-      "Content-type": "application/json",
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({ text }),
   });
-  textarea.value = "";
   if (response.status === 201) {
+    textarea.value = "";
     const { newCommentId } = await response.json();
     addComment(text, newCommentId);
   }

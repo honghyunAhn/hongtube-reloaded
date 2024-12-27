@@ -31,7 +31,7 @@ block content
             a(href=`${video.id}/delete`) Delete Video &rarr;
         div.video__add-comments
             form.video__comment-form#commentForm
-                textarea(col="30", rows="10", placeholder="Write a nice comment...")
+                textarea(col="30", rows="10",  maxlength=35, placeholder="Write a nice comment...")
                 button Add Comment
     div.video__comments
         ul 
