@@ -107,6 +107,7 @@ export const deleteVideo = async (req, res) => {
   videos.splice(videos.indexOf(id), 1);
   await User.findByIdAndUpdate(ownerId, { videos });
   await Video.findByIdAndDelete(id);
+  await Comment.deleteMany({ video: id });
   return res.redirect("/");
 };
 
