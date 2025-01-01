@@ -10,7 +10,11 @@
     "db": "sudo systemctl start mongod",
     "dbs": "sudo systemctl stop mongod",
     "dev:server": "nodemon",
-    "dev:assets": "webpack"
+    "dev:assets": "webpack --mode=development --watch",
+    "build:server": "babel src -d dist --ignore src/client",
+    "build:assets": "webpack --mode=production",
+    "build": "npm run build:server && npm run build:assets",
+    "start": "node dist/init.js"
   },
   "author": "Ahn honghyun<anh2073@gmail.com>",
   "license": "MIT",
@@ -37,7 +41,7 @@
     "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.5",
+    "@babel/cli": "^7.26.4",
     "@babel/core": "^7.24.5",
     "@babel/node": "^7.23.9",
     "@babel/preset-env": "^7.24.5",
