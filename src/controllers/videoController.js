@@ -82,6 +82,7 @@ export const postUpload = async (req, res) => {
     const user = await User.findById(_id);
     user.videos.push(newVideo._id);
     user.save();
+    req.flash("success", "Upload Video.");
     return res.redirect("/");
   } catch (error) {
     return res.status(400).render("videos/upload", {
@@ -108,6 +109,7 @@ export const deleteVideo = async (req, res) => {
   await User.findByIdAndUpdate(ownerId, { videos });
   await Video.findByIdAndDelete(id);
   await Comment.deleteMany({ video: id });
+  req.flash("success", "Delete complete.");
   return res.redirect("/");
 };
 
@@ -157,7 +159,6 @@ export const createComment = async (req, res) => {
 
 export const deleteComment = async (req, res) => {
   const {
-    session: { user },
     body: { commentId },
     params: { id },
   } = req;
