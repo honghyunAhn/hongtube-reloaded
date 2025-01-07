@@ -29,6 +29,7 @@ export const postJoin = async (req, res) => {
       password,
       location,
     });
+    req.flash("success", "Success Join.");
     return res.redirect("/login");
   } catch (error) {
     return res.status(400).render("users/join", {
@@ -60,6 +61,7 @@ export const postLogin = async (req, res) => {
   }
   req.session.loggedIn = true;
   req.session.user = user;
+  req.flash("success", "Login.");
   return res.redirect("/");
 };
 
@@ -128,6 +130,7 @@ export const finishGithubLogin = async (req, res) => {
     }
     req.session.loggedIn = true;
     req.session.user = user;
+    req.flash("success", "Login.");
     return res.redirect("/");
   } else {
     return res.redirect("/login");
@@ -182,6 +185,7 @@ export const postEdit = async (req, res) => {
     { new: true }
   );
   req.session.user = updateUser;
+  req.flash("success", "Edit Profile.");
   return res.redirect("/users/edit");
 };
 
@@ -218,7 +222,7 @@ export const postChangePassword = async (req, res) => {
   user.password = newPassword;
   await user.save();
   req.session.user.password = user.password;
-  req.flash("info", "Password updated");
+  req.flash("success", "Password updated");
   return res.redirect("/users/logout");
 };
 
