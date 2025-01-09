@@ -19,6 +19,15 @@ const s3AvatarStorage = multerS3({
   },
 });
 
+const s3VideoStorage = multerS3({
+  s3: s3Client,
+  bucket: "hongtube-ahn",
+  acl: "public-read",
+  key: function (req, file, cb) {
+    cb(null, `videos/${req.session.user._id}/${Date.now().toString()}`);
+  },
+});
+
 export const localsMiddleware = (req, res, next) => {
   res.locals.loggedIn = Boolean(req.session.loggedIn);
   res.locals.siteName = "Hongtube";
@@ -49,6 +58,6 @@ export const avatarUpload = multer({
   storage: s3AvatarStorage,
 });
 export const videoUpload = multer({
-  dest: "uploads/videos/",
   limits: { fileSize: 10000000 },
+  storage: s3VideoStorage,
 });
