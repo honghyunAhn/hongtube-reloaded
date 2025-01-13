@@ -50,20 +50,25 @@ Node.js を勉強しながら、最近最も多く使用されているウェブ
 
 - Upload Video
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/25d78d1b-b708-4d83-b252-86053b408d45"> 
+</p>
+<br>
+
+- Play Video
+<p align="center">
   <img src=""> 
 </p>
 <br>
 
 - Edit Video
 <p align="center">
-  <img src=""> 
+  <img src="https://github.com/user-attachments/assets/2e7d247f-cee2-48aa-98f3-ce2cb7d337e5"> 
 </p>
 <br>
 
--Delete Video
-
+- Delete Video
 <p align="center">
-  <img src=""> 
+  <img src="https://github.com/user-attachments/assets/754a0440-9e93-4592-858d-decca8faa05b"> 
 </p>
 <br>
 
