@@ -56,7 +56,7 @@ Node.js を勉強しながら、最近最も多く使用されているウェブ
 
 - Play Video
 <p align="center">
-  <img src=""> 
+  <img src="https://github.com/user-attachments/assets/c5cd9fce-2c6f-4011-bb6f-63fd9267fdb8"> 
 </p>
 <br>
 
@@ -74,6 +74,6 @@ Node.js を勉強しながら、最近最も多く使用されているウェブ
 
 - Comment Video
 <p align="center">
-  <img src=""> 
+  <img src="https://github.com/user-attachments/assets/f9bb84fe-50f2-43d0-ae69-3e3614988b1c"> 
 </p>
 <br>
