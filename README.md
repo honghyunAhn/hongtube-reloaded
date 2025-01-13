@@ -16,7 +16,7 @@ Node.js を勉強しながら、最近最も多く使用されているウェブ
 - Frameworks & Tools : Visual Studio Code
 - Web Servers : node.js
 - Database : MongoDB
-- Web Developement : HTML、CSS
+- Package : ES6, Pug, Passport, AJAX, Webpack, CSCC, Multer
 - Operating Systems : Windows 10 (WSL)
 - Development period : 2024.11.6~2024.1.13
   <br>
