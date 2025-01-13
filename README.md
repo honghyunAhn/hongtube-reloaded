@@ -25,4 +25,6 @@ Node.js を勉強しながら、最近最も多く使用されているウェブ
 # Screen motion
 
 - join
-  https://github.com/user-attachments/assets/b5303683-dbed-41a9-8d10-ee8ac781287d
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b5303683-dbed-41a9-8d10-ee8ac781287d"> 
+</p>
