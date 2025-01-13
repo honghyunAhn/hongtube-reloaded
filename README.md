@@ -1,12 +1,12 @@
 # hongtube
 
-YouTubeクローンコーディング
+YouTube クローンコーディング
 <br>
 <br>
 
 # Motivation
 
-Node.jsを勉強しながら、最近最も多く使用されているウェブサイトのYouTubeをクローンコーディングしました。
+Node.js を勉強しながら、最近最も多く使用されているウェブサイトの YouTube をクローンコーディングしました。
 <br>
 <br>
 
@@ -18,6 +18,6 @@ Node.jsを勉強しながら、最近最も多く使用されているウェブ�
 - Database : MongoDB
 - Web Developement : HTML、CSS
 - Operating Systems : Windows 10 (WSL)
-- Development period : 2021.8.5~
+- Development period : 2024.11.6~2024.1.13
   <br>
   <br>
