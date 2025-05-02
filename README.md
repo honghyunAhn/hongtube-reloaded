@@ -3,12 +3,10 @@
 YouTube クローンコーディング
 #### Notion : [hongtube Notion筆記](https://anh288.notion.site/Node-js-3f0a39d8dd21455d8f02a35c291e5339)
 <br>
-<br>
 
 # Motivation
 
 Node.js を勉強しながら、最近最も多く使用されているウェブサイトの YouTube をクローンコーディングしました。
-<br>
 <br>
 
 # Tech/framework used
